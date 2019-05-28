@@ -8,7 +8,7 @@ while($true)
     $RandomDomainsSeed = Get-Random -Minimum 0 -Maximum ($Domains.Count -1)
     $RandomSuffixSeed = Get-Random -InputObject $Suffixes
     $Username = $Names[$RandomNamesSeed] + $RandomSuffixSeed + $Domains[$RandomDomainsSeed]
-    $Password = $Password = ([char[]]([char]33..[char]95) + ([char[]]([char]97..[char]126)) + 0..9 | sort {Get-Random})[0..8] -join ''
+    $Password = ([char[]]([char]33..[char]95) + ([char[]]([char]97..[char]126)) + 0..9 | sort {Get-Random})[0..8] -join ''
 
     Write-Host $UserName -ForegroundColor green
     Write-Host $Password -ForegroundColor Yellow
