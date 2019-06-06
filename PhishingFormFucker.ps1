@@ -14,7 +14,6 @@ Function PhishingFormFucker
         Return
     }
 
-
     $Names = (Invoke-WebRequest "https://raw.githubusercontent.com/powerlanguage/word-lists/master/word-list-raw.txt" | select -ExpandProperty Content | Out-String).Split("`n")
     $Suffixes = 0..9999
     $PasswordLength = 5..12
