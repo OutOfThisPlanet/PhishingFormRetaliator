@@ -17,7 +17,7 @@ Function PhishingFormFucker
     $Names = (Invoke-WebRequest "https://raw.githubusercontent.com/powerlanguage/word-lists/master/word-list-raw.txt" | select -ExpandProperty Content | Out-String).Split("`n")
     $Suffixes = 0..9999
     $PasswordLength = 5..12
-    $Domains = @("@gmail.com", "@yahoo.com", "@outlook.com", "@live.com", "@protonmail.com", "@gmail.es", "@gmail.co.uk", "@gmail.gov.uk")
+    $Domains = @("@gmail.com", "@yahoo.com", "@outlook.com", "@live.com", "@protonmail.com", "@gmail.es", "@gmail.co.uk", "@gmail.gov.uk") #LOL @gmail.gov.uk
 
     while($true)
     {
