@@ -40,7 +40,6 @@ Function PhishingFormFucker
     }
 }
 
-
 PhishingFormFucker `
 -UserNameFormFieldID "INSERT-USERNAME-FIELD-ID" ` # This is the Username field ID
 -PasswordFormFieldID "INSERT-PASSWORD-FIELD-ID" ` # This is the Password field ID
