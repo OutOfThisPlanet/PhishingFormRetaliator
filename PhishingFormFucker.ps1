@@ -42,9 +42,9 @@ Function PhishingFormFucker
 
 
 PhishingFormFucker `
--UserNameFormFieldID "Email" `
--PasswordFormFieldID "Password" `
--IDLength "13" `
--IDType "dec" `
--IDFieldID "FORM_ID_KEY" `
--PhishingURL ""
+-UserNameFormFieldID "INSERT-USERNAME-FIELD-ID" ` # This is the Username field ID - 
+-PasswordFormFieldID "INSERT-PASSWORD-FIELD-ID" ` # This is the Password field ID
+-IDType "Decimal" ` # This is to generate an formID of a specific type (Decimal, Hexidecimal, or Alphabetical)
+-IDLength "8" ` # This is for the length of the random form ID
+-IDFieldID "INSERT-FORM-ID" ` # This is the name of the form's ID
+-PhishingURL "INSERT-PHISHING-URL" # This is the phishing page's url (usually a PHP file)
