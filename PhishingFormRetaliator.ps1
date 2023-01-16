@@ -1,4 +1,4 @@
-Function PhishingFormFucker
+Function PhishingFormRetaliator
 {
     param([string]$PhishingURL, [string]$UserNameFormFieldID, [string]$PasswordFormFieldID, [string]$IDFieldID, [int]$IDLength, [string]$IDType)
 
@@ -39,8 +39,9 @@ Function PhishingFormFucker
        
     }
 }
-
-PhishingFormFucker `
+#This code is just an example. You have to look up the relative fields yourself. 
+#I wrote it ages ago, and abandoned it. I'd approach it differently now.
+PhishingFormRetaliator `
 -UserNameFormFieldID "INSERT-USERNAME-FIELD-ID" ` # This is the Username field ID
 -PasswordFormFieldID "INSERT-PASSWORD-FIELD-ID" ` # This is the Password field ID
 -IDType "Decimal" ` # This is to generate a random form ID of a specific type (Decimal, Hexidecimal, or Alphabetical)
